@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ccci/static/css/main.d884f99b.css",
+    "main.js": "/ccci/static/js/main.cf686ad0.js",
+    "static/media/Dune_Rise.otf": "/ccci/static/media/Dune_Rise.364c68a41cdafe1da287.otf",
+    "static/media/Corpa Code Administration Logo.svg": "/ccci/static/media/Corpa Code Administration Logo.595b2e5980485719b4f7336fe13c406f.svg",
+    "static/media/CCCI.svg": "/ccci/static/media/CCCI.db1a7519851908e1e98604eba9b3e10d.svg",
+    "static/media/stacked-waves-haikei.svg": "/ccci/static/media/stacked-waves-haikei.f88d2c9d35a55defee85.svg",
+    "index.html": "/ccci/index.html",
+    "main.d884f99b.css.map": "/ccci/static/css/main.d884f99b.css.map",
+    "main.cf686ad0.js.map": "/ccci/static/js/main.cf686ad0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d884f99b.css",
+    "static/js/main.cf686ad0.js"
+  ]
+}
