@@ -1,0 +1,28 @@
+.main {
+  background-color: $secondary-theme;
+  background: linear-gradient(180deg, $secondary-theme, $primary-theme);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  h3 {
+    font-family: "Jetbrains Mono";
+  }
+  p {
+    font-family: "Open Sans";
+  }
+  .main__card {
+    h3 {
+      margin: 0;
+    }
+    border-radius: 10px;
+    background-color: $secondary-theme;
+    padding: 1rem;
+  }
+}
+
+.main > *:last-child {
+  // max-width: 1000px;
+  width: 100%;
+}

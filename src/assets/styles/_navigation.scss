@@ -1,0 +1,112 @@
+.navigation-bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  // min-height: 80px;
+  background-color: transparentize($primary-theme, 0.25);
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  font-family: "Jetbrains Mono", monospace;
+  box-shadow: 0 0 15px 0.2px rgba(0, 0, 0, 0.5);
+
+  .navigation-bar-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 2rem;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    .navigation-bar-inner {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .material-symbols-outlined {
+        font-size: 1rem;
+        outline: 1px solid white;
+        border-radius: 7px;
+        padding: 0.5rem;
+        color: white;
+        margin-right: 1rem;
+        transition: outline 200ms;
+      }
+
+      .material-symbols-outlined:hover {
+        outline: 5px solid $secondary-theme;
+      }
+    }
+    .active {
+      .material-symbols-outlined {
+        outline: 3px solid $secondary-theme;
+      }
+    }
+  }
+
+  img {
+    width: 64px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navigation-bar#mobile-activated {
+    rect.bar:nth-child(2) {
+      opacity: 0;
+    }
+    rect.bar:nth-child(1) {
+      transform: translateY(0px) translateX(5.5px) rotate(45deg);
+    }
+    rect.bar:nth-child(3) {
+      transform: translateY(6px) translateX(-8.5px) rotate(-45deg);
+    }
+    #desktop-navigation {
+      left: 0%;
+      // background-color: orange;
+    }
+  }
+  .navigation-bar {
+    .navigation-bar-outer {
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0;
+      margin: 1rem 0;
+    }
+    .navigation-bar-inner {
+      width: 100%;
+      padding: 0.5rem 1rem;
+    }
+    .navigation-bar-inner:hover {
+      background-color: transparentize($primary-theme, 0.4);
+    }
+  }
+
+  #desktop-navigation {
+    position: fixed;
+    top: 101px;
+    left: -100%;
+    width: 100%;
+    transition: left 0.4s ease-in-out;
+    background-color: transparentize($primary-theme, 0.25);
+    .navigation-bar-outer {
+      flex-direction: column;
+    }
+  }
+
+  #mobile-navigation {
+    display: block;
+
+    rect.bar {
+      fill: white;
+      width: 25px;
+      height: 3px;
+      x: 0;
+      transition: 0.3s ease;
+    }
+  }
+}

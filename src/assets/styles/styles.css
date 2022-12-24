@@ -1,0 +1,215 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+body .material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-size: 2rem;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+@font-face {
+  body {
+    font-family: "Dune Rise";
+    src: url(./../fonts/Dune_Rise.otf);
+  }
+}
+body .navigation-bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  font-family: "Jetbrains Mono", monospace;
+  box-shadow: 0 0 15px 0.2px rgba(0, 0, 0, 0.5);
+}
+body .navigation-bar .navigation-bar-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+body .navigation-bar .navigation-bar-outer .navigation-bar-inner a {
+  color: white;
+  text-decoration: none;
+}
+body .navigation-bar .navigation-bar-outer .navigation-bar-inner .material-symbols-outlined {
+  font-size: 1rem;
+  outline: 1px solid white;
+  border-radius: 7px;
+  padding: 0.5rem;
+  color: white;
+  margin-right: 1rem;
+  transition: outline 200ms;
+}
+body .navigation-bar .navigation-bar-outer .navigation-bar-inner .material-symbols-outlined:hover {
+  outline: 5px solid #587c3c;
+}
+body .navigation-bar .navigation-bar-outer .active .material-symbols-outlined {
+  outline: 3px solid #587c3c;
+}
+body .navigation-bar img {
+  width: 64px;
+  aspect-ratio: 1/1;
+}
+@media screen and (max-width: 700px) {
+  body .navigation-bar#mobile-activated rect.bar:nth-child(2) {
+    opacity: 0;
+  }
+  body .navigation-bar#mobile-activated rect.bar:nth-child(1) {
+    transform: translateY(0px) translateX(5.5px) rotate(45deg);
+  }
+  body .navigation-bar#mobile-activated rect.bar:nth-child(3) {
+    transform: translateY(6px) translateX(-8.5px) rotate(-45deg);
+  }
+  body .navigation-bar#mobile-activated #desktop-navigation {
+    left: 0%;
+  }
+  body .navigation-bar .navigation-bar-outer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    margin: 1rem 0;
+  }
+  body .navigation-bar .navigation-bar-inner {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  body .navigation-bar .navigation-bar-inner:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  body #desktop-navigation {
+    position: fixed;
+    top: 101px;
+    left: -100%;
+    width: 100%;
+    transition: left 0.4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  body #desktop-navigation .navigation-bar-outer {
+    flex-direction: column;
+  }
+  body #mobile-navigation {
+    display: block;
+  }
+  body #mobile-navigation rect.bar {
+    fill: white;
+    width: 25px;
+    height: 3px;
+    x: 0;
+    transition: 0.3s ease;
+  }
+}
+body .main-header {
+  z-index: -104;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-family: "Poppins", "Open Sans", "Jetbrains Mono", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: grid;
+  min-height: 100vh;
+  background-image: url(./../images/background/stacked-waves-haikei.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  padding: 0 2rem;
+}
+@media (max-width: 750px) {
+  body .main-header .title {
+    flex-direction: column;
+  }
+}
+body .main-header h1 {
+  margin: 0;
+  place-self: end center;
+  font-weight: 900;
+}
+body .main-header h2 {
+  text-transform: uppercase;
+  -webkit-animation: blinking 3s linear 0s infinite;
+          animation: blinking 3s linear 0s infinite;
+}
+body .main-header .title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@-webkit-keyframes blinking {
+  from {
+    color: white;
+  }
+  50% {
+    color: maroon;
+  }
+  to {
+    color: white;
+  }
+}
+@keyframes blinking {
+  from {
+    color: white;
+  }
+  50% {
+    color: maroon;
+  }
+  to {
+    color: white;
+  }
+}
+body .main {
+  background-color: #587c3c;
+  background: linear-gradient(180deg, #587c3c, #000);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+body .main h3 {
+  font-family: "Jetbrains Mono";
+}
+body .main p {
+  font-family: "Open Sans";
+}
+body .main .main__card {
+  border-radius: 10px;
+  background-color: #587c3c;
+  padding: 1rem;
+}
+body .main .main__card h3 {
+  margin: 0;
+}
+body .main > *:last-child {
+  width: 100%;
+}
+body .footer {
+  background: #000;
+  color: white;
+  padding: 2rem;
+  font-family: "Jetbrains Mono", monospace, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 1500px) {
+  body .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+body .footer .corpa-code-logo {
+  width: 8rem;
+  aspect-ratio: 1/1;
+}/*# sourceMappingURL=styles.css.map */

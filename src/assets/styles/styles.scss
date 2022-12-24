@@ -1,0 +1,11 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  @import "variables.scss";
+  @import "navigation.scss";
+  @import "header.scss";
+  @import "main.scss";
+  @import "footer.scss";
+}

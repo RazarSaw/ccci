@@ -1,0 +1,15 @@
+$primary-theme: #000;
+$secondary-theme: #587c3c;
+$tertiary-theme: #85b866;
+$primary-padding: 2rem;
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-size: 2rem;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+}
+
+@font-face {
+  font-family: "Dune Rise";
+  src: url(./../fonts/Dune_Rise.otf);
+}

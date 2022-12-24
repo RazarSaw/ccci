@@ -1,0 +1,38 @@
+{
+  "sections": [
+    {
+      "1": {
+        "topic": "Litter Pollution",
+        "title": "Imagine A Community Without Litter"
+      }
+    },
+    {
+      "2": {
+        "topic": "The Facts",
+        "title": "Did You Know?",
+        "cards": [
+          {
+            "id": 1,
+            "title": "Saskatchewan With Above Average Emissions",
+            "body": "Saskatchewan’s emissions per capita are the highest in Canada at 55.9 tonnes of CO2e– 216% above the national average of 17.7 tonnes per capita."
+          },
+          {
+            "id": 2,
+            "title": "Only 9% Of Canadians Recycle",
+            "body": "Canadians throw away over 3 million tonnes of plastic waste every year. Only 9% is recycled while the rest ends up in our landfills, waste-to-energy facilities or the environment. Plastic waste and marine litter burdens our economy and threatens the health of the environment including wildlife, rivers, lakes and oceans."
+          },
+          {
+            "id": 1,
+            "title": "Saskatchewan With Above Average Emissions",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          {
+            "id": 2,
+            "title": "Only 9% Of Canadians Recycle",
+            "body": "Canadians throw away over 3 million tonnes of plastic waste every year. Only 9% is recycled while the rest ends up in our landfills, waste-to-energy facilities or the environment. Plastic waste and marine litter burdens our economy and threatens the health of the environment including wildlife, rivers, lakes and oceans."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+.main-header {
+  z-index: -104;
+  position: sticky;
+  top: 0;
+  font-family: "Poppins", "Open Sans", "Jetbrains Mono", "Segoe UI", Tahoma,
+    Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: grid;
+  min-height: 100vh;
+  background-image: url(./../images/background/stacked-waves-haikei.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  padding: 0 2rem;
+  @media (max-width: 750px) {
+    .title {
+      flex-direction: column;
+    }
+  }
+  h1 {
+    margin: 0;
+    place-self: end center;
+    font-weight: 900;
+  }
+  h2 {
+    text-transform: uppercase;
+    animation: blinking 3s linear 0s infinite;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  @keyframes blinking {
+    from {
+      color: white;
+    }
+    50% {
+      color: maroon;
+    }
+    to {
+      color: white;
+    }
+  }
+}
